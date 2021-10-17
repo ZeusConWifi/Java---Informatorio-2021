@@ -9,6 +9,7 @@ public class Seis {
         int n = num.nextInt();
         int result = calcularPotencia(m,n);
         System.out.println(m+" elevado a la "+n+"es: "+result);
+        num.close();
     }
     static int calcularPotencia(int m, int n){
         int preg = 1;

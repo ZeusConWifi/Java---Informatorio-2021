@@ -20,6 +20,6 @@ public class Dos {
         System.out.println( primerNumero / segundoNumero );
         System.out.print("Su módulo es: ");
         System.out.println( primerNumero % segundoNumero );
-
+entradaScanner.close();
     }
 }

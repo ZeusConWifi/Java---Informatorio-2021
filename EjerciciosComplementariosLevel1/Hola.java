@@ -10,6 +10,7 @@ public class Hola {
         String usuario = entradaScanner.nextLine(); 
 
         System.out.println("Hola " + usuario);
+        entradaScanner.close();
     }
 }
 

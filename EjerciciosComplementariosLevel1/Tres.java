@@ -7,6 +7,7 @@ public class Tres {
         int num = entradaScanner.nextInt();
             for (int i = 0; i <= num; i++) {
             System.out.println(i);
+            entradaScanner.close();
         }   
     }    
 }

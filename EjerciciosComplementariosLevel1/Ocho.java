@@ -14,6 +14,8 @@ public class Ocho {
         String ciudad = entradaScanner2.nextLine(); 
 
         System.out.print(nombre + " - " + edad + " - " + direccion + " - " + ciudad);
+        entradaScanner.close();
+        entradaScanner2.close();
     }
     
 }

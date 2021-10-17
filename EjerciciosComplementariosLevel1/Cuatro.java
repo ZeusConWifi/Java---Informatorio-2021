@@ -5,7 +5,8 @@ public class Cuatro {
          Scanner entradaScanner = new Scanner(System.in); 
          System.out.println("Ingrese un número entero: ");
          int num = entradaScanner.nextInt();
-         System.out.println( "El factorial de " + num + " es: " + factorial( num ) );      
+         System.out.println( "El factorial de " + num + " es: " + factorial( num ) );  
+         entradaScanner.close();    
         }
       
         public static int factorial( int num ) {

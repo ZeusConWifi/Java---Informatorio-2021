@@ -9,6 +9,7 @@ public class Cinco {
         int n = num.nextInt();
         int mult = mult(m, n);
         System.out.println("La multiplicación sucesiva de ambos números es= "+ mult);
+        num.close();
     }
     static int mult(int m, int n){
         int mul = 0;
