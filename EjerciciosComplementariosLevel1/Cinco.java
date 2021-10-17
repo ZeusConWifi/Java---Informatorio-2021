@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Cinco {
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
-        System.out.print("Ingrese el primero número entero: ");
+        System.out.print("Ingrese el primer número entero: ");
         int m = num.nextInt();
         System.out.print("Ingrese el segundo número entero: ");
         int n = num.nextInt();
