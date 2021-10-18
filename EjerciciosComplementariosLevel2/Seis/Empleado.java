@@ -13,11 +13,9 @@ public class Empleado {
       this.dni = dni;
       this.horasTrabajadas = horasTrabajadas;
       this.valoPorHora = valorPorHora;
-
     }
 
   public int calcularSueldo() {
       return horasTrabajadas * valoPorHora;
-
   }
 }
