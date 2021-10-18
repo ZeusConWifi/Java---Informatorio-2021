@@ -22,7 +22,7 @@ public class Seis {
         
         lista.add(new Empleado("Marcos", "Acuña", 11111111, 8, 456));
         
-        lista.add(new Empleado("Lautaro", "Martínez", 09090909, 9, 440));
+        lista.add(new Empleado("Lautaro", "Martínez", 22222222, 9, 440));
 
         for (Empleado emp : lista) {
             
