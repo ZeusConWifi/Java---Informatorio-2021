@@ -1,28 +1,57 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.ArrayList;
+
 
 public class Cinco {
     public static void main(String[] args) {
-        ArrayList<Integer> array1 = new ArrayList<Integer>();
-        array1.add(8);
-        array1.add(7);
-        array1.add(8);
-        array1.add(9);
-        array1.add(8);
+        
+        Scanner scan = new Scanner(System.in);
+        
+        ArrayList<Integer> horasTrabajadas = new ArrayList<Integer>();
+        
+        ArrayList<Integer> valorHora = new ArrayList<Integer>();
+        
+        ArrayList<Integer> totalDia = new ArrayList<Integer>();
+        
+        int valor = 0;
+        
+        int sumaFinal = 0;
+        
+        int dias = 1;
 
-        ArrayList<Integer> array2 = new ArrayList<Integer>();
-        array2.add(350);
-        array2.add(340);
-        array2.add(350);
-        array2.add(360);
-        array2.add(350);
+        while (dias < 6){
+            
+            System.out.println("¿Cuantas horas se trabajó el dia # " + dias +"?");
+            
+            valor = scan.nextInt();
+            
+            horasTrabajadas.add(valor);
 
-        ArrayList<Integer> array3 = new ArrayList<Integer>();
-        array3.add(2800);
-        array3.add(2520);
-        array3.add(2800);
-        array3.add(3060);
-        array3.add(2800);
-        System.out.println(array3);
-        System.out.println("El valor total es: $13860");
+            System.out.println("¿Cuanto vale cada hora trabajada del dia # " + dias +"?");
+            
+            valor = teclado.nextInt();
+            
+            valorHora.add(valor);
+           
+            dias++;
+        }
+        scan.close();
+
+        for (int dia = 0; dia < valorHora.size(); dia++) {
+            
+            valor = valorHora.get(dia) * horasTrabajadas.get(dia);
+            
+            totalDia.add(valor);
+        }
+
+        for (int i :totalDia){
+            
+            sumaFinal += i;
+        }
+
+        System.out.println("El monto a cobrar por dia será de: " + totalDia);
+        
+        System.out.println("El monto semanal será de: " + sumaFinal);
+
     }
 }
